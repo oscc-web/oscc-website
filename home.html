@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OSCC首页</title>
+    <link href="//unpkg.com/layui@2.9.21/dist/css/layui.css" rel="stylesheet">
+    <style type="text/css">
+        .layui-panel {
+            color: black;
+        }
+        .layui-btn-container {
+            padding: 10px;
+        }
+        .layui-btn a {
+            color: white;
+        }
+
+        .oscc-title-h1 {
+            padding: 10px 0px 0px 10px;
+            font-size: xx-large;
+            font-weight: bold;
+            text-align: center;
+        }
+        .oscc-title-h2 {
+            padding: 10px 0px 0px 10px;
+            font-size: large;
+            font-weight: bold;
+        }
+        .oscc-title-h3 {
+            padding: 10px 0px 0px 10px;
+            font-size: medium;
+            font-weight: bold;
+        }
+
+        .oscc-text {
+            padding: 10px;
+            font-size: medium;
+        }
+        .oscc-text-bold {
+            font-weight: bold;
+        }
+        .oscc-color-blue {
+            color: #1e9fff;
+        }
+        .oscc-pad-tl-10px {
+            padding: 10px 0px 0px 10px;
+        }
+
+        #page-banner {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="layui-container">
+        <div id="page-banner" class="layui-row layui-col-space16">
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md12">
+                <div class="layui-panel">
+                    <img alt="Banner" src="./banner.jpg" width="100%" />
+                </div>
+            </div>
+        </div>
+        <div id="page-intro" class="layui-row layui-col-space16">
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md12">
+                <div class="layui-panel">
+                    <div class="oscc-title-h1">ECOS 2030</div>
+                    <div class="oscc-text">
+                        以“开源”和“智能”革新芯片设计方法学，推动发展RISC-V开放指令集、开源EDA、开源IP、系统软件和人才培养等，构建开源的芯片设计解决方案及其技术生态体系，支持RISC-V处理器SoC芯片全流程可流片设计和软硬件系统一体化集成。
+                        基于如上的开源体系，到2030年，累计培养RISC-V软硬件人才超10000人，服务超过100个企业或团队，支持设计超过1000款芯片，支撑RISC-V处理器核应用规模超100亿。
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md12">
+                <div class="layui-row layui-col-space16">
+                    <div class="layui-col-xs6 layui-col-sm6 layui-col-md6">
+                        <div class="layui-panel">
+                            <div class="oscc-text">
+                                开源芯片生态团队（简称ECO5 Team，包含EDA、Chip、OneStudentOneChip、System等），致力于构建开源的芯片设计解决方案及其技术生态体系，用“开源”理念革新芯片设计方法，实现“用开源降低芯片设计门槛，赋能千行万业”的终极愿景。<a href="./page.html" class="oscc-color-blue">了解更多</a></div>
+                        </div>
+                    </div>
+                    <div class="layui-col-xs6 layui-col-sm6 layui-col-md6">
+                        <div class="layui-panel">
+                            <div class="layui-btn-container">
+                                <button type="button" class="layui-btn">
+                                    <a target="_blank" href="https://github.com">GitHub</a>
+                                </button>
+                                <button type="button" class="layui-btn layui-bg-black">
+                                    <a target="_blank" href="https://twitter.com">Twitter</a>
+                                </button>
+                                <button type="button" class="layui-btn layui-bg-red">
+                                    <a target="_blank" href="https://www.youtube.com">YouTube</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="page-job" class="layui-row layui-col-space16">
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md6">
+                <div class="layui-panel">
+                    <div class="oscc-title-h2">招生招聘</div>
+                    <div class="oscc-text">
+                        ECOS团队每年招收保研/考研的硕士生（计算所、国科大和上科大）以及实习生和工程师，欢迎联系报名。同时，有很多体系结构和计算机系统方向的高校课题组和企业项目组委托ECOS团队招生招聘，详细请查看：careers.oscc.cc。
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md6">
+                <div class="layui-panel">
+                    <div class="oscc-title-h2">联系合作</div>
+                    <div class="oscc-text">
+                        ECOS团队对开源芯片及其软硬件系统，例如RISC-V软硬件、开源IP、开源EDA、开放人才培养等，抱有极大热情。对如上内容感兴趣的社区爱好者、老师或同学，非常欢迎联系：xxx。
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="page-prj" class="layui-row layui-col-space16">
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md12">
+                <div class="layui-panel">
+                    <div id="page-prj-oseda" class="layui-row">
+                        <div class="layui-col-xs12 layui-col-sm12 layui-col-md12">
+                            <div class="oscc-title-h2">开源EDA</div>
+                        </div>
+                        <div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+                            <div class="layui-row">
+                                <div class="layui-col-xs3 layui-col-sm3 layui-col-md3">
+                                    <div class="oscc-title-h3 oscc-color-blue">芯片编译器Chip Compiler</div>
+                                </div>
+                                <div class="layui-col-xs9 layui-col-sm9 layui-col-md9 oscc-text">
+                                    <div><span class="oscc-text-bold">介绍：</span>芯片编译器（ChipCompiler）可支持芯片全流程设计的开源EDA工具链（从RTL仿真到可流片的GDSI版图）。</div>
+                                    <div><span class="oscc-text-bold">网址：</span>cc.oscc.cc</div>
+                                    <div><span class="oscc-text-bold">仓库：</span>xxx</div>
+                                    <div><span class="oscc-text-bold">联系：</span>xxx</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+                            <div class="layui-row">
+                                <div class="layui-col-xs3 layui-col-sm3 layui-col-md3">
+                                    <img alt="iEDA" src="./logo/ieda.png" width="90%" class="oscc-pad-tl-10px" />
+                                </div>
+                                <div class="layui-col-xs9 layui-col-sm9 layui-col-md9 oscc-text">
+                                    <div class=""><span class="oscc-text-bold">介绍：</span>iEDA项目由计算所ECOS团队与鹏城实验室联合研发，打造开源智能的EDA工具及基础设施。</div>
+                                    <div><span class="oscc-text-bold">网址：</span>idea.oscc.cc</div>
+                                    <div><span class="oscc-text-bold">仓库：</span>xxx</div>
+                                    <div><span class="oscc-text-bold">联系：</span>xxx</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="page-prj-chip" class="layui-row">
+                        <div class="layui-col-xs12 layui-col-sm12 layui-col-md12">
+                            <div  class="oscc-title-h2">芯片设计</div>
+                        </div>
+                        <div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+                            <div class="layui-row">
+                                <div class="layui-col-xs3 layui-col-sm3 layui-col-md3">
+                                    <div class="oscc-title-h3 oscc-color-blue">开源IP/SoC</div>
+                                </div>
+                                <div class="layui-col-xs9 layui-col-sm9 layui-col-md9 oscc-text">
+                                    <div><span class="oscc-text-bold">介绍：</span>芯开源IP/SoC，xxx【宇飏宇驰提供】。</div>
+                                    <div><span class="oscc-text-bold">网址：</span>ip.oscc.cc</div>
+                                    <div><span class="oscc-text-bold">仓库：</span>xxx</div>
+                                    <div><span class="oscc-text-bold">联系：</span>xxx</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+                            <div class="layui-row">
+                                <div class="layui-col-xs3 layui-col-sm3 layui-col-md3">
+                                    <div class="oscc-title-h3 oscc-color-blue">SNOW</div>
+                                </div>
+                                <div class="layui-col-xs9 layui-col-sm9 layui-col-md9 oscc-text">
+                                    <div><span class="oscc-text-bold">介绍：</span>SNOW（Shuttle No Wait）为高校科研院所和初创公司等提供低成本的芯片定制、设计和流片等服务。</div>
+                                    <div><span class="oscc-text-bold">网址：</span>snow.oscc.cc</div>
+                                    <div><span class="oscc-text-bold">仓库：</span>xxx</div>
+                                    <div><span class="oscc-text-bold">联系：</span>xxx</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="page-prj-train" class="layui-row">
+                        <div class="layui-col-xs12 layui-col-sm12 layui-col-md12">
+                            <div class="oscc-title-h2">人才培养</div>
+                        </div>
+                        <div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+                            <div class="layui-row">
+                                <div class="layui-col-xs3 layui-col-sm3 layui-col-md3">
+                                    <img alt="一生一芯" src="./logo/ysyx.png" width="90%" class="oscc-pad-tl-10px"></img>
+                                </div>
+                                <div class="layui-col-xs9 layui-col-sm9 layui-col-md9 oscc-text">
+                                    <div><span class="oscc-text-bold">介绍：</span>一生一芯由中国科学院大学发起的芯片及系统人才培养计划，全年开放报名不限学校、专业和年级。<br>.oscc.cc</div>
+                                    <div><span class="oscc-text-bold">网址：</span>网址：ysyx.oscc.cc</div>
+                                    <div><span class="oscc-text-bold">仓库：</span>xxx</div>
+                                    <div><span class="oscc-text-bold">联系：</span>xxx</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+                            <div class="layui-row">
+                                <div class="layui-col-xs3 layui-col-sm3 layui-col-md3">
+                                    <div class="oscc-title-h3 oscc-color-blue">MOLI</div>
+                                </div>
+                                <div class="layui-col-xs9 layui-col-sm9 layui-col-md9 oscc-text">
+                                    <div><span class="oscc-text-bold">介绍：</span>MOLI（Massive Open Learning-bydoing Initiative）由一生一芯团队发起的泛系统类学习社区。</div>
+                                    <div><span class="oscc-text-bold">网址：</span>moli.oscc.cc</div>
+                                    <div><span class="oscc-text-bold">仓库：</span>xxx</div>
+                                    <div><span class="oscc-text-bold">联系：</span>xxx</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+                            <div class="layui-row">
+                                <div class="layui-col-xs3 layui-col-sm3 layui-col-md3">
+                                    <div class="oscc-title-h3 oscc-color-blue">计算机系统能力大赛（开芯杯）</div>
+                                </div>
+                                <div class="layui-col-xs9 layui-col-sm9 layui-col-md9 oscc-text">
+                                    <div><span class="oscc-text-bold">介绍：</span>开芯杯ysyx团队受大赛组织方邀请开办的一个全栈系统类比赛（含软件编译器、操作系统、处理器结构等）。</div>
+                                    <div><span class="oscc-text-bold">网址：</span>网址：contest.oscc.cc</div>
+                                    <div><span class="oscc-text-bold">仓库：</span>xxx</div>
+                                    <div><span class="oscc-text-bold">联系：</span>xxx</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="page-prj-system" class="layui-row">
+                        <div class="layui-col-xs12 layui-col-sm12 layui-col-md12">
+                            <div class="oscc-title-h2">系统设计</div>
+                        </div>
+                        <div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+                            <div class="layui-row">
+                                <div class="layui-col-xs3 layui-col-sm3 layui-col-md3">
+                                    <div class="oscc-title-h3 oscc-color-blue">芯片敏捷设计云平台</div>
+                                </div>
+                                <div class="layui-col-xs9 layui-col-sm9 layui-col-md9 oscc-text">
+                                    <div><span class="oscc-text-bold">介绍：</span>WeDesign构建基于云模式的芯片设计模式，可在云端完成可流片设计。</div>
+                                    <div><span class="oscc-text-bold">网址：</span>网址：wedesign.oscc.cc</div>
+                                    <div><span class="oscc-text-bold">仓库：</span>xxx</div>
+                                    <div><span class="oscc-text-bold">联系：</span>xxx</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+                            <div class="layui-row">
+                                <div class="layui-col-xs3 layui-col-sm3 layui-col-md3">
+                                    <div class="oscc-title-h3 oscc-color-blue">高性能计算系统</div>
+                                </div>
+                                <div class="layui-col-xs9 layui-col-sm9 layui-col-md9 oscc-text">
+                                    <div><span class="oscc-text-bold">介绍：</span>HPC围绕芯片设计过程中的核心软件和系统等，使用并行计算、GPU编程等方法进行加速。</div>
+                                    <div><span class="oscc-text-bold">网址：</span>hpc.oscc.cc</div>
+                                    <div><span class="oscc-text-bold">仓库：</span>xxx</div>
+                                    <div><span class="oscc-text-bold">联系：</span>xxx</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
