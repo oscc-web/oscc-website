@@ -1,0 +1,119 @@
+site_name: oscc
+site_url: https://oscc.xx
+
+repo_url: https://github.com/oscc-web/oscc-website
+repo_name: oscc-web/oscc-website
+edit_uri: edit/main/docs/
+
+copyright: >
+    Copyright &copy; 2024 - 2030 OSCC –
+    <a href="#__consent">Change cookie settings</a>
+
+theme:
+    name: material
+    palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+          icon: material/brightness-auto
+          name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+          icon: material/brightness-7
+          name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: orange
+      toggle:
+          icon: material/brightness-4
+          name: Switch to light mode
+    font:
+        text: Roboto
+        code: Roboto Mono
+    language: zh
+    direction: ltr
+    # logo:
+    # favicon:
+    icon:
+        previous: fontawesome/solid/angle-left
+        next: fontawesome/solid/angle-right
+        repo: fontawesome/brands/git-alt
+        edit: material/pencil
+        view: material/eye
+    features:
+        - navigation.instant
+        - navigation.instant.prefetch
+        - navigation.instant.progress
+        - navigation.tracking
+        - navigation.tabs
+        - navigation.tabs.sticky
+        - navigation.sections
+        - navigation.expand
+        - navigation.path
+        # - navigation.prune
+        - navigation.indexes
+        - toc.follow
+        - navigation.top
+        - announce.dismiss
+        - navigation.footer
+        - content.action.edit
+        - content.action.view
+
+plugins:
+    - privacy
+    - search
+    - social
+    - git-revision-date-localized:
+        enabled: !ENV [CI, false]
+        type: timeago
+        enable_creation_date: true
+        fallback_to_build_date: false
+    - git-committers:
+        enabled: !ENV [CI, false]
+        repository: oscc-web/oscc-website
+        branch: main
+        exclude:
+            - index.md
+    - awesome-pages:
+        filename: .pages
+        collapse_single_pages: false
+        strict: true
+        order: asc
+        sort_type: natural
+        order_by: filename
+        ignore_case: false
+    - blog
+    - tags
+
+extra:
+    alternate:
+        - name: "中文"
+          link: /
+          lang: zh
+        - name: "English"
+          link: /en/
+          lang: en
+    homepage: https://oscc.xx
+    consent:
+        title: Cookie Consent
+        description: >-
+            We use cookies to recognize your repeated visits and preferences, as well measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.
+        cookies:
+            analytics:
+                name: Google Analytics
+                checked: true
+        actions:
+            - accept
+            - reject
+            - manage
+    social:
+        - icon: fontawesome/brands/github
+          link: https://github.com/oscc-web
+          name: GitHub
+    analytics:
+        provider: google
+        property: G-XXXXXXXXXX
+    scope: /
